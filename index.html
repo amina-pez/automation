@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>  
+    <title>Demo Automation Site</title>
+	<div align="center" style="padding:5px;">
+		<h1 style="font-family:alegreya">Selenium Automation Test Page<h1>
+		<hr style="margin:25px;">
+	</div>
+	<!-- To ensure proper rendering on mobile devices and disable zooming capabilities -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	 <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Lato" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet"
+	href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>  
+  <!-- BODY START -->
+  <body style="font-size:18px; font-family:alegreya;"> 
+	<!-- FORM START -->  
+    <form id="practiceForm" name="OptionsForm"  onsubmit="return false">  
+	
+	
+	
+	  <div class="row" style="margin:10px;">
+                <legend>Element Displayed Example</legend>
+                <button id="hide-textbox" type="button" class="col-md-4 col-xs-10 col-xs-offset-1" onclick="hideElement()">Hide</button>
+           </div>     
+               <div class="row" style="margin:10px;">
+                <div name="displayed-text">Tekst koji treba biti sakriven </div>
+          
+	   </div>
+	
+	
+	
+	
+	  <!-- RADIO BUTTONS START -->
+      <div class="row" style="margin:10px;"> 
+		<div class="col-md-12 col-xs-10 col-xs-offset-1" >
+			<strong>I have:&nbsp;&nbsp;</strong>
+		</div>
+		<div id="twoLegAnimals" class="col-md-6 col-xs-10 col-xs-offset-1">
+			<input id="penguin-checkbox" type="checkbox" name="animal" value="Bicycle">&nbsp;Penguin  
+			<input id="emu-checkbox" type="checkbox" name="animal2" value="Emu" disabled>&nbsp;Emu   
+			<input id="parrot-checkbox" type="checkbox" name="animal3" value="Parrot">&nbsp;Parrot
+		</div> <!-- //.twoWheelVehicles -->	
+		<div id="fourLegAnimals" class="col-md-6 col-xs-10 col-xs-offset-1">
+			<input id="dog-checkbox" type="checkbox" name="animal4" value="Dog">&nbsp;Dog	
+			<input id="cat-checkbox" type="checkbox" name="animal5" value="Cat">&nbsp;Cat   
+			<input id="horse-checkbox" type="checkbox" name="animal6" value="Horse">&nbsp;Horse
+				
+		</div> <!-- //.fourWheelVehicles -->	
+		</div> <!-- //.row -->
+		<!-- CHECKBOXES START -->
+		<div class="row" style="margin:10px;"> 
+		<div class="col-md-12 col-xs-10 col-xs-offset-1" >
+			<strong>I read:&nbsp;&nbsp;</strong>
+		</div>
+		<div id="booksCheckboxes" class="col-md-12 col-xs-10 col-xs-offset-1">
+			<input type="radio" name="books" value="Legenda o Ali Pasi"> &nbsp;Legenda o Ali Pasi
+			<input  type="radio" name="books" value="Jezeva kucica"> &nbsp;Jezeva kucica 
+			<input  type="radio" name="books" value="365 pripovjetki"> &nbsp;356 pripovjetki
+	  </div> <!-- //.booksCheckboxes -->	
+      </div> <!-- //.row -->	
+	  <!-- DROPDOWN START -->
+	  <div class="row" style="margin:10px;"> 
+	  <div id="dropdowns" class="col-md-4 col-xs-10 col-xs-offset-1" style="padding-bottom:15px;">		
+		<p><strong><label>Nahla Courses</label></strong></p>
+		<select id="Nahla Course" class="input-xlarge" name="courses">
+			<option value="Sivanje">Sivanje</option>
+			<option value="Vezenje">Vezenje</option>
+			<option value="Engleski">Engleski</option>
+			<option value="Turski">Turski</option>
+			<option value="Njemacki">Njemacki</option>
+		
+		</select>	  
+	    <br/>
+		<br/>
+      </div>
+ </div>	  
+	  
+	  
+	  <!-- Pop-up boxes START -->
+	  <div class="row" style="margin:10px;"> 
+	  <div class="col-md-4 col-xs-10 col-xs-offset-1">
+		<button id="promptBox" onclick="clickToPrompt()">Prompt box!</button>
+		<p id="demo"></p>
+	  </div> <!-- //.alertBox -->
+	  </div> <!-- //.row -->
+	  <!-- Pop-up boxes END -->
+	  <br/>
+	  
+	  <!-- Table START -->
+	  <div class="row" style="margin:10px;"> 
+	  <div name="studenti" class="col-md-10 col-xs-10 col-xs-offset-1">
+	  <p><strong><label>Podaci o studentima</label></strong></p>
+	  <div class="table-responsive">
+	  <table id="studentTable" class="table table-bordered">         
+		<tr>          
+			<th>First Name</th>           
+			<th>Last Name</th>  
+			<th>Course</th> 
+			<th>Regular </th> 
+		</tr> 
+		<tr>
+			<td>William</td>
+			<td>Bell</td>
+			<td>English</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Majda</td>
+			<td>Husic</td>
+			<td>English</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Ana</td>
+			<td>Pez</td>
+			<td>Yoga</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td>Aida</td>
+			<td>Pezic</td>
+			<td>Turkish</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Dow</td>
+			<td>Computers</td>
+			<td>No</td>
+		</tr>	
+		<tr>
+			<td>Kenan</td>
+			<td>Lopez</td>
+			<td>Computers</td>
+			<td>Yes</td>
+		</tr>
+	  </table>
+	 </div>
+	 </div> <!-- //.AuthorsTable -->
+	 </div> <!-- //.row -->
+	  <!-- Table END -->
+	  
+	  <!--  START -->
+	  <div class="row" style="margin:10px;">
+	  <div id="multipleWindows" class="col-md-4 col-xs-10 col-xs-offset-1">
+		<p><button id="win1" OnClick="newWindow()">Click to open a new browser window!</button></p>
+	  </div> <!-- //.multipleWindows -->
+	  
+	 
+	  </div> <!-- //.row -->
+	   <!--  END -->
+	   
+	   <!--  START -->
+	  <div class="row" style="margin:10px;">
+		<div id="dragDrop" class="col-md-6 col-xs-offset-1">
+			<p><strong><label>Drag and drop the elements in the below list</label></strong></p>
+			<ul id="sortable" class="ui-sortable">
+				<li id="click">click()</li>
+				<li id="sendKeys">sendKeys()</li>
+				<li id="findElement">findElement()</li>
+				<li id="clickAndHold">clickAndHold()</li>
+			</ul>
+		</div> <!-- //.dragDrop -->
+	  </div> <!-- //.row -->
+	   <!--  END --> 
+	   
+<div class="row" style="margin:10px;"> 
+	  <div class="col-md-6 col-xs-offset-1" >	   
+	   
+	<h4 id="demo2" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h4>
+	 </div> <!-- //.dragDrop -->
+	  </div> <!-- //.row -->  
+	   
+    </form> <!-- //.practiceForm -->	
+	<br/>
+	<br/>
+	<div class="row" style="margin:10px;">
+	
+	<iframe src="https://nahla.ba/" title="Nahla" width="50%" height="300" style="border:1px solid black;">
+</iframe>
+ </div>
+<!-- //HORIZONTAL LINE TO SEPARATE FOOTER -->
+ <hr>
+ <!-- //FOOTER SECTION -->
+  <footer id="footer" class="text-center">Written & Coded by ES
+  </footer> <!-- //.footer -->	
+<!-- //FOOTER SECTION -->
+
+<!-- SCRIPTS :placed at the end so that page loads faster -->
+	<!-- Latest compiled and minified JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Font icons -->
+	<script src="https://use.fontawesome.com/ba8437ed1f.js"></script>   
+	<!-- Main JS -->
+	<script src="js/DemoSite.js"></script>
+<!-- //SCRIPTS -->
+
+  </body>  
+</html> 	
